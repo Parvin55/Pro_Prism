@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="draw.css">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <div class="nav">
+        <p>
+            Color:
+            <input data-jscolor="{onInput:'colorpicker(this)', alpha:1.0}" value="#00000000" id="colorpicker">
+            
+        </p>
+        <p>
+            Size:
+            <input value="20" id="size">
+        </p>
+        <button class="clear">clear</button>
+        <button class="save">save</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jscolor/2.5.1/jscolor.js">
+        jscolor.presets.default = {
+    position: 'right',
+    palette: [
+        '#000000', '#7d7d7d', '#870014', '#ec1c23', '#ff7e26',
+        '#fef100', '#22b14b', '#00a1e7', '#3f47cc', '#a349a4',
+        '#ffffff', '#c3c3c3', '#b87957', '#feaec9', '#ffc80d',
+        '#eee3af', '#b5e61d', '#99d9ea', '#7092be', '#c8bfe7',
+    ],
+    paletteCols: 12,
+    hideOnPaletteClick: true,
+};
+    </script>
+    <script src="draw.js"></script>
+</body>
+</html>

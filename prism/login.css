@@ -1,0 +1,103 @@
+body {
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("img/login.jpg");
+    background-size: cover;
+    background-position: top;
+    font-family: Arial, sans-serif;
+    
+  }
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(222, 182, 182, 0.3);
+    margin: 20px auto;
+    max-width: 400px;
+    padding: 30px;
+}
+
+h1 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.input-field input {
+    border: none;
+    border-bottom: 2px solid #ddd;
+    font-size: 18px;
+    padding: 10px 5px;
+    width: 100%;
+}
+
+.input-field label {
+    color: #777;
+    font-size: 16px;
+    font-weight: bold;
+    left: 5px;
+    position: absolute;
+    top: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.input-field input:focus ~ label, .input-field input:valid ~ label {
+    color: #333;
+    font-size: 14px;
+    top: -15px;
+}
+
+button[type="submit"] {
+    background-color: #3b3e6d;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 30px;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+}
+
+.login {
+    background-color: #3b3e6d;
+    border: none;
+    border-radius: 100px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 13px;
+    margin-top: 30px;
+    padding: 0px;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    
+}
+   
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.links a {
+    color: #777;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.links a:hover {
+    color: #333;
+}
